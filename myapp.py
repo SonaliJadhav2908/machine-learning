@@ -1,5 +1,4 @@
 from sklearn.preprocessing import PolynomialFeatures
-from sklearn.linear_model import LinearRegression
 import numpy as np
 import pickle
 from flask import Flask,render_template,request
