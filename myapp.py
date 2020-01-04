@@ -13,7 +13,7 @@ def hello_world():
 @app.route('/predict',methods = ['POST'])
 def get_result():
     poly = pickle.load(open('Poly.pkl','rb'))
-    model.pickle.load(open('model.pkl','rb'))
+    model= pickle.load(open('model.pkl','rb'))
     query = [[float(request.form['text2'])]]
     x_query = poly.transform(query)
     sal = model.predict(x_query)
